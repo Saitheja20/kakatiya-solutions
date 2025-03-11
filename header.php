@@ -375,7 +375,7 @@
             /* will-change: transform;
       transform-origin: center; */
             text-align: center;
-            transition: transform 2s ease-in-out;
+            transition: transform 1.3s ease-in-out;
 
         }
 
@@ -417,9 +417,14 @@
         .zwc-product-details{
             margin-top: 0px;
         }
+        @media screen and (min-width: 1450px) {
+            .navsec {
+                margin-left: 15rem;
+            }
+        }
     </style>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container-fluid navsec">
             <a class="navbar-brand logo" href="#" id="logo"><img src="assets/images/logo_trans_white.png" alt="logo image" width="100px" height="80px"></a>
 
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -535,7 +540,7 @@
                                                                     <div class="zwc-launch-rows">
                                                                         <div class="zwc-launch-list zp-apptics">
                                                                             <div class="zwc-launch-product-content">
-                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/webdev.png" alt="kakatiya solutions web des img" width="180" height="120" class="zwc-product-logo zp-wid-custom">
+                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/webdev2.png" alt="kakatiya solutions web des img" width="180" height="120" class="zwc-product-logo zp-wid-custom">
 
                                                                                     <div class="card-bottom">
                                                                                         <p>Web Designing</p><a href="/apptics/?src=allproducts">Try for free</a>
@@ -546,7 +551,7 @@
                                                                         </div>
                                                                         <div class="zwc-launch-list zp-iot">
                                                                             <div class="zwc-launch-product-content">
-                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/webdevs2.jpg" alt="kakatiya solutions web dev img" width="180" height="120" class="zwc-product-logo">
+                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/webdev3.png" alt="kakatiya solutions web dev img" width="180" height="120" class="zwc-product-logo">
                                                                                     <div class="card-bottom">
                                                                                         <p>Web Development.</p><a href="/iot/?src=allproducts">Try now</a>
                                                                                     </div>
@@ -555,7 +560,7 @@
                                                                         </div>
                                                                         <div class="zwc-launch-list zp-payments">
                                                                             <div class="zwc-launch-product-content">
-                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/digital-marketing.png" alt="kakatiya solutions marketing img" width="180" height="120" class="zwc-product-logo">
+                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/digital-marketing2.png" alt="kakatiya solutions marketing img" width="180" height="120" class="zwc-product-logo">
                                                                                     <div class="card-bottom">
                                                                                         <p>Digital Marketing.</p><a href="/payments/?src=allproducts" class="zgh-btn-1">Try now</a>
                                                                                     </div>
@@ -573,7 +578,7 @@
                                                                         </div>
                                                                         <div class="zwc-launch-list zp-payments">
                                                                             <div class="zwc-launch-product-content">
-                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/software-development.png" alt="kakatiya solutions software img" width="180" height="120" class="zwc-product-logo">
+                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/software-development2.png" alt="kakatiya solutions software img" width="180" height="120" class="zwc-product-logo">
                                                                                     <div class="card-bottom">
                                                                                         <p>Software Development.</p><a href="/payments/?src=allproducts" class="zgh-btn-1">Try now</a>
                                                                                     </div>
@@ -582,7 +587,7 @@
                                                                         </div>
                                                                         <div class="zwc-launch-list zp-payments">
                                                                             <div class="zwc-launch-product-content">
-                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/Business-Branding.png" alt="kakatiya solutions branding img" width="180" height="120" class="zwc-product-logo">
+                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/Business-Branding2.png" alt="kakatiya solutions branding img" width="180" height="120" class="zwc-product-logo">
                                                                                     <div class="card-bottom">
                                                                                         <p>Branding.</p><a href="/payments/?src=allproducts" class="zgh-btn-1">Try now</a>
                                                                                     </div>
@@ -591,7 +596,7 @@
                                                                         </div>
                                                                         <div class="zwc-launch-list zp-payments">
                                                                             <div class="zwc-launch-product-content">
-                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/bulk-voice-sms.png" alt="kakatiya solutions bulk sms image" width="180" height="120" class="zwc-product-logo">
+                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/bulk-voice-sms2.png" alt="kakatiya solutions bulk sms image" width="180" height="120" class="zwc-product-logo">
                                                                                     <div class="card-bottom">
                                                                                         <p>Bulk SMS / VOICE.</p><a href="/payments/?src=allproducts" class="zgh-btn-1">Try now</a>
                                                                                     </div>
@@ -600,7 +605,7 @@
                                                                         </div>
                                                                         <div class="zwc-launch-list zp-payments">
                                                                             <div class="zwc-launch-product-content">
-                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/domains.png" alt="kakatiya solutions Domains imag" width="180" height="120" class="zwc-product-logo">
+                                                                                <div class="zwc-launch-prd-details"><img src="assets/images/domains2.png" alt="kakatiya solutions Domains imag" width="180" height="120" class="zwc-product-logo">
                                                                                     <div class="card-bottom">
                                                                                         <p>Domains & Hostings.</p><a href="/payments/?src=allproducts" class="zgh-btn-1">Try now</a>
                                                                                     </div>
