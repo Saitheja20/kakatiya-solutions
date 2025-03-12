@@ -1,0 +1,33 @@
+.kasmainweb{
+    background-color: black;
+    color: white;
+    font-size: large;
+    /* text-align: center; */
+    /* display: inline; */
+    /* margin-top: 0%; */
+    /* margin: 0%;
+    width: 50%; Add a width to center the element */
+}
+
+.kasmainwebcol{
+
+    margin: auto;
+
+}
+
+.kasmainwebrow{
+    background-color: black;
+        color: white;
+}
+
+  .gradient-border-box {
+      width: 200px;
+      height: 200px;
+      border-radius: 22px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-width: 15px;
+      border-style: solid;
+      border-image: linear-gradient(to right, #65e0da, #1dceaa) 1;
+      /* This will apply a gradient to all borders, but you can control it further. */
+  }
