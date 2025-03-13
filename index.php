@@ -110,6 +110,12 @@
             background-color: #161b22;
         }
 
+        .thirdbanner {
+            /* background: linear-gradient(22deg, rgb(255, 230, 0) 55%, rgb(251, 255, 38) 45%); */
+            background: linear-gradient(18.1deg, #007074 55%, #034C53 45%);
+
+        }
+
         @media screen and (min-width: 991px) {
 
             .secondbannercol1 {
@@ -148,6 +154,46 @@
             .secondbannercol2>h3 {
                 margin: auto;
             }
+
+            .thirdbannerrow {
+                padding: 6rem !important;
+
+            }
+
+            .thirdbannercol {
+
+                /* padding-top: 1rem !important;
+                padding-left: 6rem !important;
+                padding-right: 6rem !important;
+                padding-bottom: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+
+
+                background-color: #643bf1;
+                border-radius: 5%; */
+
+                padding: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                background-color: rgb(0, 0, 0);
+                margin-left: 2rem;
+                border-radius: 2%;
+
+            }
+
+            /* .thirdbannercol2 {
+                
+                padding: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                background-color: rgb(0, 0, 0);
+                margin-left: 2rem;
+                border-radius: 5%;
+            } */
 
             .btn-primary {
                 --bs-btn-color: #f1f1f1 !important;
@@ -212,6 +258,40 @@
                 color: rgb(213 44 44 / 99%);
                 margin: auto;
             }
+
+            .client-logos {
+                background-color: #f8f9fa;
+                padding: 20px 20px;
+                margin-top: 20px;
+            }
+
+            .logo-carousel {
+                display: flex;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: scrollLogos 20s ease-in infinite;
+            }
+
+            .logo-item {
+                flex: 0 0 auto;
+                margin: 0 15px;
+            }
+
+            .logo-item img {
+                max-width: 100px;
+                height: auto;
+            }
+
+            @keyframes scrollLogos {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
         }
     </style>
 </head>
@@ -302,6 +382,23 @@
                     </div>
                 </div>
 
+
+            </section>
+            <section>
+                <div class="container-fluid thirdbanner client-logos">
+                    <div class="row thirdbannerrow">
+                        <div class="col-lg-12 thirdbannercol">
+                            
+                            <div class="logo-carousel">
+                                <div class="logo-item"><img src="assets/images/logo.png" alt="Client 1"></div>
+                                <div class="logo-item"><img src="assets/images/logo2.png" alt="Client 2"></div>
+                                <div class="logo-item"><img src="assets/images/logo_trans_white.png" alt="Client 3"></div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
 
             </section>
         </div>
