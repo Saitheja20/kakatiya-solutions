@@ -160,29 +160,6 @@
 
             }
 
-            .thirdbannercol {
-
-                /* padding-top: 1rem !important;
-                padding-left: 6rem !important;
-                padding-right: 6rem !important;
-                padding-bottom: 6rem !important;
-                font-size: 60px;
-                font-weight: bold;
-                font-family: cursive;
-
-
-                background-color: #643bf1;
-                border-radius: 5%; */
-
-                padding: 6rem !important;
-                font-size: 60px;
-                font-weight: bold;
-                font-family: cursive;
-                background-color: rgb(0, 0, 0);
-                margin-left: 2rem;
-                border-radius: 2%;
-
-            }
 
             /* .thirdbannercol2 {
                 
@@ -259,6 +236,42 @@
                 margin: auto;
             }
 
+            .thirdbannercol {
+
+                /* padding-top: 1rem !important;
+                padding-left: 6rem !important;
+                padding-right: 6rem !important;
+                padding-bottom: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+
+
+                background-color: #643bf1;
+                border-radius: 5%; */
+
+                /* padding: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                background-color: rgb(0, 0, 0);
+                margin-left: 2rem;
+                border-radius: 2%;
+                overflow: hidden; */
+                /* Prevents overflow */
+
+                padding: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                background-color: rgb(0, 0, 0);
+                margin-left: 2rem;
+                border-radius: 2%;
+                overflow: hidden;
+
+            }
+
+
             .client-logos {
                 background-color: #f8f9fa;
                 padding: 20px 20px;
@@ -267,24 +280,56 @@
 
             .logo-carousel {
                 display: flex;
-                overflow: hidden;
-                white-space: nowrap;
-                animation: scrollLogos 20s ease-in infinite;
+                /* animation: scrollLogos 20s linear infinite; */
+                animation: scrollLogos 40s linear infinite;
+                width: 100%;
+            }
+
+            .logo-carousel2 {
+                display: flex;
+                /* animation: scrollLogos 20s linear infinite; */
+                animation: scrollLogos2 50s linear infinite;
+                width: 100%;
             }
 
             .logo-item {
                 flex: 0 0 auto;
                 margin: 0 15px;
+                width: auto;
             }
 
             .logo-item img {
-                max-width: 100px;
-                height: auto;
+                max-width: 150px;
+                height: 150px;
             }
 
             @keyframes scrollLogos {
-                0% {
+
+                /* 0% {
                     transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                } */
+                /* for rweverse order */
+                /* 0% {
+                    transform: translateX(-100%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                } */
+                0% {
+                    transform: translateX(0%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
                 }
 
                 100% {
@@ -292,6 +337,104 @@
                 }
             }
 
+            @keyframes scrollLogos2 {
+                0% {
+                    transform: translateX(-100%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                }
+            }
+
+        }
+
+
+        @media screen and (max-width: 990px) {
+
+            /* for lower devices */
+            .client-logos {
+                background-color: #f8f9fa;
+                padding: 20px 20px;
+                margin-top: 20px;
+            }
+
+            .logo-carousel {
+                display: flex;
+                /* animation: scrollLogos 20s linear infinite; */
+                animation: scrollLogos 40s linear infinite;
+                width: 100%;
+            }
+
+            .logo-carousel2 {
+                display: flex;
+                /* animation: scrollLogos 20s linear infinite; */
+                animation: scrollLogos2 50s linear infinite;
+                width: 100%;
+            }
+
+            .logo-item {
+                flex: 0 0 auto;
+                margin: 0 15px;
+                width: auto;
+            }
+
+            .logo-item img {
+                max-width: 150px;
+                height: auto;
+            }
+
+            @keyframes scrollLogos {
+
+                /* 0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                } */
+                /* for rweverse order */
+                /* 0% {
+                    transform: translateX(-100%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                } */
+                0% {
+                    transform: translateX(0%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            @keyframes scrollLogos2 {
+                0% {
+                    transform: translateX(-100%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                }
+            }
         }
     </style>
 </head>
@@ -388,22 +531,90 @@
                 <div class="container-fluid thirdbanner client-logos">
                     <div class="row thirdbannerrow">
                         <div class="col-lg-12 thirdbannercol">
-                            
+                            <!-- for fist row right to left -->
                             <div class="logo-carousel">
-                                <div class="logo-item"><img src="assets/images/logo.png" alt="Client 1"></div>
-                                <div class="logo-item"><img src="assets/images/logo2.png" alt="Client 2"></div>
-                                <div class="logo-item"><img src="assets/images/logo_trans_white.png" alt="Client 3"></div>
-                               
+                                <div class="logo-item"><img src="assets/images/clients/telangana.png" alt="telangana logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/election.png" alt="election logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/gwmc.png" alt="gwmc logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/ts-police.png" alt="ts-police logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/medaram.png" alt="medaram logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/ghmc.png" alt="ghmc logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/sru-big.png" alt="sru-big logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/sritw.png" alt="sritw logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/ajara.png" alt="ajara logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/nevonex.png" alt="nevonex logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/vcloud.png" alt="vcloud logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/mulkanoor.png" alt="mulkanoor logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/dimension.png" alt="dimension logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/white.png" alt="white logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/bits.png" alt="bits logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/cjit.png" alt="Client 1"></div>
+                                <div class="logo-item"><img src="assets/images/clients/itnest.png" alt="itnest logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/jits.png" alt="jits logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/kht.png" alt="kht logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/lb.png" alt="lb logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/maa.png" alt="maa logo"></div>
+                            </div>
+
+
+
+                            <!-- for second  row left to right -->
+                            <div class="logo-carousel2">
+                                <div class="logo-item"><img src="assets/images/clients/maharshi.png" alt="maharshi logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/nsr.png" alt="nsr logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/shine.png" alt="shine logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/spido.png" alt="spido logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/tekiq.png" alt="tekiq logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/star.png" alt="star logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/softtech.png" alt="softtech logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/gs.png" alt="gs logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/alashmallogo-new.png" alt="alashmallogo-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/jsmlogo-new.png" alt="jsmlogo-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/jayaE-new.png" alt="jayaE-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/Diocese-new.png" alt="Diocese-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/rich-new.png" alt="rich-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/client-new.png" alt="spr logo "></div>
+                                <div class="logo-item"><img src="assets/images/clients/dreams-new.png" alt="dreams-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/stpeters-new.png" alt="stpeters-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/kakatiya-new.png" alt="kakatiya-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/rdjc-new.png" alt="rdjc-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/rddc-new.png" alt="rddc-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/vlct-new.png" alt="vlct-new logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/sukji-new.png" alt="sukji-new logo"></div>
+
+
+                                <!-- <div class="logo-item"><img src="assets/images/clients/telangana.png" alt="telangana logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/election.png" alt="election logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/gwmc.png" alt="gwmc logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/ts-police.png" alt="ts-police logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/medaram.png" alt="medaram logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/ghmc.png" alt="ghmc logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/sru-big.png" alt="sru-big logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/sritw.png" alt="sritw logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/ajara.png" alt="ajara logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/nevonex.png" alt="nevonex logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/vcloud.png" alt="vcloud logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/mulkanoor.png" alt="mulkanoor logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/dimension.png" alt="dimension logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/white.png" alt="white logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/bits.png" alt="bits logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/cjit.png" alt="Client 1"></div>
+                                <div class="logo-item"><img src="assets/images/clients/itnest.png" alt="itnest logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/jits.png" alt="jits logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/kht.png" alt="kht logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/lb.png" alt="lb logo"></div>
+                                <div class="logo-item"><img src="assets/images/clients/maa.png" alt="maa logo"></div> -->
                             </div>
                         </div>
                     </div>
                 </div>
-            
-
-            </section>
         </div>
-        <?php include('footer.php') ?>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+        </section>
+    </div>
+    <?php include('footer.php') ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
