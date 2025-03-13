@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .gradient-border {
             border-left: 15px solid transparent;
@@ -98,6 +99,120 @@
             z-index: 1;
             font-size: xxx-large;
         }
+
+
+
+        /* 2nd div dev */
+
+
+
+        .secondbanner {
+            background-color: #161b22;
+        }
+
+        @media screen and (min-width: 991px) {
+
+            .secondbannercol1 {
+                /* padding: 3rem; */
+                padding-top: 1rem !important;
+                padding-left: 6rem !important;
+                padding-right: 6rem !important;
+                padding-bottom: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                /* font-family: 'Times New Roman', Times, serif; */
+
+                background-color: #643bf1;
+                border-radius: 5%;
+
+            }
+
+            .secondbannercol2 {
+                /* padding: 3rem; */
+                padding: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                background-color: rgb(0, 0, 0);
+                margin-left: 2rem;
+                border-radius: 5%;
+            }
+
+            .secondbannerrow {
+                /* padding: 3rem; */
+                padding: 6rem !important;
+
+            }
+
+            .secondbannercol2>h3 {
+                margin: auto;
+            }
+
+            .btn-primary {
+                --bs-btn-color: #f1f1f1 !important;
+                --bs-btn-bg: #000000 !important;
+                --bs-btn-border-color-top: rgb(45, 97, 110) !important;
+                --bs-btn-hover-color: #000000 !important;
+                transition: all 2s ease-in-out;
+                /* Added transition here */
+            }
+
+            .btn-primary:hover {
+                background-color: rgb(0, 0, 0) !important;
+                color: rgb(255, 255, 255) !important;
+                transform: scale(1.1, 1.1);
+                transition: all 2s ease-in-out;
+                position: relative;
+
+            }
+
+            .btn-primary .arrow {
+                opacity: 0;
+                display: inline-block;
+                margin-left: 0;
+                transition: all 0.3s ease;
+            }
+
+            .btn-primary:hover .arrow {
+                opacity: 1;
+                margin-left: 8px;
+            }
+
+            .btn-primary::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 4px;
+                background-color: red;
+                left: 0;
+                bottom: -8px;
+                transition: width 0.5s ease-in-out;
+            }
+
+            .btn-primary:hover::after {
+                width: 100%;
+            }
+
+            .btn-primary:hover:after {
+                background-color: rgb(0, 0, 0) !important;
+                color: rgb(255, 255, 255) !important;
+                transform: scale(1.1, 1.1);
+                transition: all 2s ease-in-out;
+            }
+
+            /* .parag {
+                margin-top: 1rem;
+                font-size: medium !important;
+                color: rgb(127, 150, 185);
+            }    */
+            .parag {
+                margin-top: 1rem;
+                font-size: xx-large;
+                color: rgb(213 44 44 / 99%);
+                margin: auto;
+            }
+        }
     </style>
 </head>
 
@@ -165,74 +280,29 @@
 
 
         <div>
-            <section class="Primer_Brand__Bento-module__Bento___mNrII">
-                <div class="Primer_Brand__Bento-module__Bento__Item___fM9oe Primer_Brand__Bento-module__Bento__Item--bgColor-subtle___rIDKo Primer_Brand__Bento-module__Bento__Item--xsmall-column-span-12___fEgOK Primer_Brand__Bento-module__Bento__Item--large-column-span-7___mLdYl Primer_Brand__Bento-module__Bento__Item--xsmall-row-span-4___X_F9d Primer_Brand__Bento-module__Bento__Item--large-row-span-5___qiTGf Primer_Brand__Bento-module__Bento__Item--flow-row___DVol6 Primer_Brand__Bento-module__Bento__Item--xsmall-gap-normal___XrOHt Primer_Brand__Bento-module__Bento__Item--medium-gap-spacious___vFlWU Primer_Brand__Bento-module__Bento__Item--visual-as-background___z0J2Q bento-item-ai-copilot">
-                    <div class="Primer_Brand__Bento-module__Bento__Content___BhnY8 Primer_Brand__Bento-module__Bento__Item--horizontalAlign-start___apVss Primer_Brand__Bento-module__Bento--xsmall-padding-normal___C2rTu Primer_Brand__Bento-module__Bento--medium-padding-spacious___I5PEZ">
-                        <h3 class="Primer_Brand__Heading-module__Heading___IVpmp Primer_Brand__Heading-module__Heading-font--mona-sans___SCnTx Primer_Brand__Heading-module__Heading--3___wsITu Primer_Brand__Heading-module__Heading--weight-semibold___NMvbh Primer_Brand__Bento-module__Bento__heading--no-text___FiQWM">Push what's possible with GitHub Copilot, the world's most trusted and widely adopted AI developer tool.</h3><a class="Primer_Brand__Link-module__Link___lvKjM Primer_Brand__Link-module__Link--large___cXMt5 Primer_Brand__Link-module__Link--default___UKAcZ Primer_Brand__Bento-module__Bento__call-to-action___CF7bA" href="/features/copilot"><span class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--default___DChoE Primer_Brand__Text-module__Text--300___TBQTB Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Link-module__Link--label___j8etE">Learn more about Copilot</span><svg class="Primer_Brand__ExpandableArrow-module__ExpandableArrow___rkfek Primer_Brand__Link-module__Link-arrow___HBMJ9" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
-                                <path class="Primer_Brand__ExpandableArrow-module__ExpandableArrow-stem___g4mdy" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
-                            </svg></a>
-                    </div>
-                </div>
-                <div class="Primer_Brand__Bento-module__Bento__Item___fM9oe Primer_Brand__Bento-module__Bento__Item--bgColor-subtle___rIDKo Primer_Brand__Bento-module__Bento__Item--xsmall-column-span-12___fEgOK Primer_Brand__Bento-module__Bento__Item--large-column-span-5___t06QC Primer_Brand__Bento-module__Bento__Item--row-span-5___wO0Ev Primer_Brand__Bento-module__Bento__Item--flow-row___DVol6 Primer_Brand__Bento-module__Bento__Item--xsmall-gap-normal___XrOHt Primer_Brand__Bento-module__Bento__Item--medium-gap-spacious___vFlWU Primer_Brand__Bento-module__Bento-row-padding-override___r37Kb" style="background:var(--base-color-scale-black-0);grid-gap:0">
-                    <div class="Primer_Brand__Bento-module__Bento__Content___BhnY8 Primer_Brand__Bento-module__Bento__Item--horizontalAlign-center___DJpgD Primer_Brand__Bento-module__Bento--xsmall-padding-normal___C2rTu Primer_Brand__Bento-module__Bento--medium-padding-spacious___I5PEZ">
-                        <h3 class="Primer_Brand__Heading-module__Heading___IVpmp Primer_Brand__Heading-module__Heading-font--mona-sans___SCnTx Primer_Brand__Heading-module__Heading--display___xFecE Primer_Brand__Heading-module__Heading--weight-medium___II172 Primer_Brand__Bento-module__Bento__heading--with-max-width___B8vBa" style="margin-bottom:var(--base-size-8);font-size:112px;letter-spacing:-0.5rem">88%</h3>
-                        <p class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--muted___lTaVa Primer_Brand__Text-module__Text--400___y7m4l Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Text-module__Text--weight-normal___siVLX Primer_Brand__Text-module__Text-align--center___NbZtZ Primer_Brand__Bento-module__Bento__Content-text___Q4UA5">of developers experience increased productivity.<sup><a href="#footnote-1" id="footnote-ref-1">1</a></sup></p>
-                    </div>
-                    <div class="Primer_Brand__Bento-module__Bento__Visual___uQCng Primer_Brand__Bento-module__Bento__Visual--horizontalAlign-center___nyK69 Primer_Brand__Bento-module__Bento__Visual--verticalAlign-center___nSnau Primer_Brand__Bento-module__Bento__Visual--overflow-hidden___KzPcB Primer_Brand__Bento-module__Bento--padding-spacious___ydfpH Primer_Brand__Bento-module__Bento__Visual--no-fill___JcHtr"><img alt="Copilot logo" class="Primer_Brand__Image-module__Image___FgVuK" width="112" height="112" style="object-position:50% 50%" src="/images/modules/site/enterprise/2023/copilot-icon.png"></div>
-                </div>
-                <div class="Primer_Brand__Bento-module__Bento__Item___fM9oe Primer_Brand__Bento-module__Bento__Item--bgColor-subtle___rIDKo Primer_Brand__Bento-module__Bento__Item--column-span-12___CaIjg Primer_Brand__Bento-module__Bento__Item--xsmall-row-span-3___t3hyC Primer_Brand__Bento-module__Bento__Item--small-row-span-4___KuACi Primer_Brand__Bento-module__Bento__Item--medium-row-span-4___xPGyT Primer_Brand__Bento-module__Bento__Item--large-row-span-5___qiTGf Primer_Brand__Bento-module__Bento__Item--flow-row___DVol6 Primer_Brand__Bento-module__Bento-row-padding-override___r37Kb Primer_Brand__Bento-module__Bento__Item--visual-as-background___z0J2Q bento-item-ai-code">
-                    <div class="Primer_Brand__Bento-module__Bento__Visual___uQCng Primer_Brand__Bento-module__Bento__Visual--horizontalAlign-center___nyK69 Primer_Brand__Bento-module__Bento__Visual--verticalAlign-end___IVb1w Primer_Brand__Bento-module__Bento__Visual--overflow-hidden___KzPcB Primer_Brand__Bento-module__Bento__Visual--no-fill___JcHtr"><a href="https://docs.github.com/copilot/quickstart#introduction" data-analytics-event="{&quot;category&quot;:&quot;enterprise copilot&quot;,&quot;action&quot;:&quot;click on enterprise copilot&quot;,&quot;label&quot;:&quot;ref_cta:enterprise_copilot;ref_loc:body&quot;}"><img alt="Code editor showing code suggestions" class="Primer_Brand__Image-module__Image___FgVuK bento-item-ai-code-img" style="display:block" src="/images/modules/site/enterprise/2023/code-window.png"></a></div>
-                </div>
-                <div class="Primer_Brand__Bento-module__Bento__Item___fM9oe Primer_Brand__Bento-module__Bento__Item--bgColor-subtle___rIDKo Primer_Brand__Bento-module__Bento__Item--column-span-12___CaIjg Primer_Brand__Bento-module__Bento__Item--xsmall-row-span-12___Gl_9d Primer_Brand__Bento-module__Bento__Item--small-row-span-12___lUcIB Primer_Brand__Bento-module__Bento__Item--medium-row-span-6___uXSJ0 Primer_Brand__Bento-module__Bento__Item--xsmall-flow-row___k8j9i Primer_Brand__Bento-module__Bento__Item--small-flow-row___FlDbE Primer_Brand__Bento-module__Bento__Item--medium-flow-column___K27t6" style="background:var(--base-color-scale-black-0);grid-gap:0">
-                    <div class="Primer_Brand__Bento-module__Bento__Visual___uQCng Primer_Brand__Bento-module__Bento__Visual--overflow-hidden___KzPcB Primer_Brand__Bento-module__Bento--xsmall-padding-normal___C2rTu Primer_Brand__Bento-module__Bento--medium-padding-spacious___I5PEZ Primer_Brand__Bento-module__Bento__Visual--fill___B70Uy d-block customer-story-bento-padding">
-                        <h3 class="Primer_Brand__Heading-module__Heading___IVpmp Primer_Brand__Heading-module__Heading-font--mona-sans___SCnTx Primer_Brand__Heading-module__Heading--4___C9jDG Primer_Brand__Heading-module__Heading--weight-semibold___NMvbh" data-analytics-visible="{&quot;category&quot;:&quot;enterprise customer story&quot;,&quot;label&quot;:&quot;ref_cta:enterprise_customer_story;ref_loc:body&quot;}">Mercado Libre frees developers' minds to focus on their mission with GitHub.</h3><a class="Primer_Brand__Link-module__Link___lvKjM Primer_Brand__Link-module__Link--large___cXMt5 Primer_Brand__Link-module__Link--accent___FWEDd mb-10 mt-3" href="/customer-stories/mercado-libre" data-analytics-event="{&quot;category&quot;:&quot;enterprise customer story&quot;,&quot;action&quot;:&quot;click on enterprise customer story&quot;,&quot;label&quot;:&quot;ref_cta:enterprise_customer_story;ref_loc:body&quot;}"><span class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--default___DChoE Primer_Brand__Text-module__Text--300___TBQTB Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Link-module__Link--label___j8etE">Read customer story</span><svg class="Primer_Brand__ExpandableArrow-module__ExpandableArrow___rkfek Primer_Brand__Link-module__Link-arrow___HBMJ9" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
-                                <path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
-                                <path class="Primer_Brand__ExpandableArrow-module__ExpandableArrow-stem___g4mdy" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
-                            </svg></a>
-                        <div class="Primer_Brand__Stack-module__Stack___tASKe Primer_Brand__Stack-module__Stack--horizontal___YJFas Primer_Brand__Stack-module__Stack--gap-normal___JEO7_ Primer_Brand__Stack-module__Stack--align-items-flex-start___Vh1Ca Primer_Brand__Stack-module__Stack--justify-content-flex-start___VIkHJ Primer_Brand__Stack-module__Stack--padding-condensed___mo7Aq" style="min-height:10em;max-height:12.5em;padding-left:0;padding-right:0">
-                            <div class="Primer_Brand__Pillar-module__Pillar___dHhm7 Primer_Brand__Pillar-module__Pillar--align-start___dfipC flex-1 customer-story-pillar">
-                                <h3 class="Primer_Brand__Heading-module__Heading___IVpmp Primer_Brand__Heading-module__Heading-font--mona-sans___SCnTx Primer_Brand__Heading-module__Heading--4___C9jDG Primer_Brand__Pillar-module__Pillar__heading___C7yPQ">~50%</h3>
-                                <p class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--muted___lTaVa Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Pillar-module__Pillar__description___BPMTa max-height-inherit">reduced time by writing code with GitHub Copilot</p>
+
+            <section>
+                <div class="container-fluid secondbanner">
+                    <div class="row secondbannerrow">
+                        <div class="col-lg-7 secondbannercol1">
+                            <div>
+                                <h3>
+                                    ​Empower your business with Kakatiya Solutions, where innovation meets excellence in software development.
+                                </h3>
+                                <button class="btn btn-primary">Get A Quote Now <span class="arrow"><i class="fa-solid fa-angle-right"></i></span></button>
                             </div>
-                            <div class="Primer_Brand__Pillar-module__Pillar___dHhm7 Primer_Brand__Pillar-module__Pillar--align-start___dfipC flex-1 customer-story-pillar">
-                                <h3 class="Primer_Brand__Heading-module__Heading___IVpmp Primer_Brand__Heading-module__Heading-font--mona-sans___SCnTx Primer_Brand__Heading-module__Heading--4___C9jDG Primer_Brand__Pillar-module__Pillar__heading___C7yPQ">100,000</h3>
-                                <p class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--muted___lTaVa Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Pillar-module__Pillar__description___BPMTa">pull requests merged per day</p>
+                        </div>
+                        <div class="col-lg-4 secondbannercol2">
+                            <h3>89%</h3>
+                            <p class="parag">client engagement boost with design.</p>
+                            <div style="display: flex; justify-content: center; align-items: center; margin-top: 11rem;">
+                                <img src="assets/images/logo_trans_white.png" alt="kakatiya logo" width="150px" height="auto">
                             </div>
                         </div>
                     </div>
-                    <div class="Primer_Brand__Bento-module__Bento__Visual___uQCng Primer_Brand__Bento-module__Bento__Visual--overflow-hidden___KzPcB Primer_Brand__Bento-module__Bento--xsmall-padding-normal___C2rTu Primer_Brand__Bento-module__Bento--medium-padding-spacious___I5PEZ Primer_Brand__Bento-module__Bento__Visual--fill___B70Uy customer-story-bento-padding">
-                        <ul class="Primer_Brand__Timeline-module__Timeline___keSeT">
-                            <li class="Primer_Brand__Timeline-module__Timeline__item____ME4_"><span class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--default___DChoE Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Timeline-module__Timeline__item-text___sbSjp">
-                                    <div class="Primer_Brand__Pillar-module__Pillar___dHhm7 Primer_Brand__Pillar-module__Pillar--align-start___dfipC">
-                                        <h3 class="Primer_Brand__Heading-module__Heading___IVpmp Primer_Brand__Heading-module__Heading-font--mona-sans___SCnTx Primer_Brand__Heading-module__Heading--subhead-large____C6GZ Primer_Brand__Pillar-module__Pillar__heading___C7yPQ">Problem</h3>
-                                        <p class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--muted___lTaVa Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Pillar-module__Pillar__description___BPMTa enterprise-lp">Mercado Libre developer platform team needed secure DevOps tooling that would allow its developers to be more efficient and allow them to focus more on providing value to users.</p>
-                                    </div>
-                                </span></li>
-                            <li class="Primer_Brand__Timeline-module__Timeline__item____ME4_"><span class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--default___DChoE Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Timeline-module__Timeline__item-text___sbSjp">
-                                    <div class="Primer_Brand__Pillar-module__Pillar___dHhm7 Primer_Brand__Pillar-module__Pillar--align-start___dfipC">
-                                        <h3 class="Primer_Brand__Heading-module__Heading___IVpmp Primer_Brand__Heading-module__Heading-font--mona-sans___SCnTx Primer_Brand__Heading-module__Heading--subhead-large____C6GZ Primer_Brand__Pillar-module__Pillar__heading___C7yPQ">Solution</h3>
-                                        <p class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--muted___lTaVa Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Pillar-module__Pillar__description___BPMTa enterprise-lp">Mercado Libre uses GitHub to automate deployment, security tests, and repetitive tasks so developers have more free time to spend on high-value, rewarding work.</p>
-                                    </div>
-                                </span></li>
-                            <li class="Primer_Brand__Timeline-module__Timeline__item____ME4_"><span class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--default___DChoE Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Timeline-module__Timeline__item-text___sbSjp">
-                                    <div class="Primer_Brand__Pillar-module__Pillar___dHhm7 Primer_Brand__Pillar-module__Pillar--align-start___dfipC">
-                                        <h3 class="Primer_Brand__Heading-module__Heading___IVpmp Primer_Brand__Heading-module__Heading-font--mona-sans___SCnTx Primer_Brand__Heading-module__Heading--subhead-large____C6GZ Primer_Brand__Pillar-module__Pillar__heading___C7yPQ">Products</h3>
-                                        <p class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--muted___lTaVa Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Pillar-module__Pillar__description___BPMTa enterprise-lp"><a class="Primer_Brand__Link-module__Link___lvKjM Primer_Brand__Link-module__Link--accent___FWEDd Primer_Brand__Pillar-module__Pillar__link___yiBNY" href="/enterprise"><span class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--default___DChoE Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Link-module__Link--label___j8etE">GitHub Enterprise</span><svg class="Primer_Brand__ExpandableArrow-module__ExpandableArrow___rkfek Primer_Brand__Link-module__Link-arrow___HBMJ9" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
-                                                    <path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
-                                                    <path class="Primer_Brand__ExpandableArrow-module__ExpandableArrow-stem___g4mdy" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
-                                                </svg></a><br><a class="Primer_Brand__Link-module__Link___lvKjM Primer_Brand__Link-module__Link--accent___FWEDd Primer_Brand__Pillar-module__Pillar__link___yiBNY" href="/features/copilot"><span class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--default___DChoE Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Link-module__Link--label___j8etE">GitHub Copilot</span><svg class="Primer_Brand__ExpandableArrow-module__ExpandableArrow___rkfek Primer_Brand__Link-module__Link-arrow___HBMJ9" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
-                                                    <path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
-                                                    <path class="Primer_Brand__ExpandableArrow-module__ExpandableArrow-stem___g4mdy" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
-                                                </svg></a><br><a class="Primer_Brand__Link-module__Link___lvKjM Primer_Brand__Link-module__Link--accent___FWEDd Primer_Brand__Pillar-module__Pillar__link___yiBNY" href="/enterprise/advanced-security"><span class="Primer_Brand__Text-module__Text___pecHN Primer_Brand__Text-module__Text-font--mona-sans___GpzSG Primer_Brand__Text-module__Text--default___DChoE Primer_Brand__Text-module__Text--200___XAIGT Primer_Brand__Text-module__Text--antialiased___fYDxq Primer_Brand__Link-module__Link--label___j8etE">GitHub Advanced Security</span><svg class="Primer_Brand__ExpandableArrow-module__ExpandableArrow___rkfek Primer_Brand__Link-module__Link-arrow___HBMJ9" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
-                                                    <path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path>
-                                                    <path class="Primer_Brand__ExpandableArrow-module__ExpandableArrow-stem___g4mdy" stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
-                                                </svg></a></p>
-                                    </div>
-                                </span></li>
-                        </ul>
-                    </div>
                 </div>
+
+
             </section>
         </div>
         <?php include('footer.php') ?>
