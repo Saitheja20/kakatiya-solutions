@@ -4,96 +4,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Designs</title>
+    <title>Kakatiya Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .image-sequence-hero {
-            transition: transform 0.5s ease;
+        .gradient-border {
+            border-left: 15px solid transparent;
+            border-image: linear-gradient(to right, #65e0da, #1776ef) 1;
+            border-radius: 15px;
         }
 
-        .scroll-container-hero {
-            overflow-y: scroll;
-            height: 100vh;
+        .bouncing-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .dot {
+            width: 5px;
+            height: 5px;
+            margin: 0 5px;
+            /* background-color: rgb(255, 0, 0); */
+            background-color: rgb(43, 250, 250);
+
+
+            border-radius: 50%;
+            /* animation: bounce 1.5s 2; */
+            animation: bounce 1.5s infinite;
+
+            /* position: relative; */
+            /* z-index: 1; */
+            /* overflow: hidden; */
+        }
+
+        .dot:hover {
+            /* width: 5px;
+            height: 5px;
+            margin: 0 5px; */
+            /* background-color: rgb(255, 0, 0); */
+            background-color: rgb(255, 146, 30);
+
+
+            /* border-radius: 50%; */
+            /* animation: bounce 1.5s 2; */
+            /* animation: bounce 1.5s 5; */
+
+            /* position: relative; */
+            /* z-index: 1; */
+            /* overflow: hidden; */
+        }
+
+
+        .dot:nth-child(2) {
+            animation-delay: 0.3s;
+            background-color: rgb(255, 19, 19);
+
+        }
+
+        .dot:nth-child(3) {
+            background-color: rgb(66, 255, 19);
+            animation-delay: 0.6s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(3);
+            }
+
+            50% {
+                transform: translateY(15px);
+            }
+        }
+
+        .who:hover {
+            /* background: linear-gradient(45deg, #070F2B 50%, #09122C 50%); */
+            padding: 10px;
+            border: 2px solid transparent;
+            /* clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%); */
+            /* background: linear-gradient(white, white) padding-box,
+                linear-gradient(45deg, red, blue) border-box; */
+            color: black !important;
+            transform: scale(1.1, 1.1);
+            transition: all 2s ease;
+        }
+
+        .who {
+            /* opacity: 0.5 !important; */
+            position: relative;
+            z-index: 1;
+            font-size: xxx-large;
+        }
+
+
+
+        /* 2nd div dev */
+
+
+
+        .secondbanner {
+            background-color: #161b22;
+        }
+
+        .thirdbanner {
+            /* background: linear-gradient(22deg, rgb(255, 230, 0) 55%, rgb(251, 255, 38) 45%); */
+            background: linear-gradient(18.1deg, #007074 55%, #034C53 45%);
+
+        }
+
+        @media screen and (min-width: 991px) {
+
+            .secondbannercol1 {
+                /* padding: 3rem; */
+                padding-top: 1rem !important;
+                padding-left: 6rem !important;
+                padding-right: 6rem !important;
+                padding-bottom: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                /* font-family: 'Times New Roman', Times, serif; */
+
+                background-color: #643bf1;
+                border-radius: 5%;
+
+            }
+
+            .secondbannercol2 {
+                /* padding: 3rem; */
+                padding: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                background-color: rgb(0, 0, 0);
+                margin-left: 2rem;
+                border-radius: 5%;
+            }
+
+            .secondbannerrow {
+                /* padding: 3rem; */
+                padding: 6rem !important;
+
+            }
+
+            .secondbannercol2>h3 {
+                margin: auto;
+            }
+
+            .thirdbannerrow {
+                padding: 6rem !important;
+
+            }
+
+
+            /* .thirdbannercol2 {
+                
+                padding: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                background-color: rgb(0, 0, 0);
+                margin-left: 2rem;
+                border-radius: 5%;
+            } */
+
+            .btn-primary {
+                --bs-btn-color: #f1f1f1 !important;
+                --bs-btn-bg: #000000 !important;
+                --bs-btn-border-color-top: rgb(45, 97, 110) !important;
+                --bs-btn-hover-color: #000000 !important;
+                transition: all 2s ease-in-out;
+                /* Added transition here */
+            }
+
+            .btn-primary:hover {
+                background-color: rgb(0, 0, 0) !important;
+                color: rgb(255, 255, 255) !important;
+                transform: scale(1.1, 1.1);
+                transition: all 2s ease-in-out;
+                position: relative;
+
+            }
+
+            .btn-primary .arrow {
+                opacity: 0;
+                display: inline-block;
+                margin-left: 0;
+                transition: all 0.3s ease;
+            }
+
+            .btn-primary:hover .arrow {
+                opacity: 1;
+                margin-left: 8px;
+            }
+
+            .btn-primary::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 4px;
+                background-color: red;
+                left: 0;
+                bottom: -8px;
+                transition: width 0.5s ease-in-out;
+            }
+
+            .btn-primary:hover::after {
+                width: 100%;
+            }
+
+            .btn-primary:hover:after {
+                background-color: rgb(0, 0, 0) !important;
+                color: rgb(255, 255, 255) !important;
+                transform: scale(1.1, 1.1);
+                transition: all 2s ease-in-out;
+            }
+
+            /* .parag {
+                margin-top: 1rem;
+                font-size: medium !important;
+                color: rgb(127, 150, 185);
+            }    */
+            .parag {
+                margin-top: 1rem;
+                font-size: xx-large;
+                color: rgb(213 44 44 / 99%);
+                margin: auto;
+            }
+
+            .thirdbannercol {
+
+                /* padding-top: 1rem !important;
+                padding-left: 6rem !important;
+                padding-right: 6rem !important;
+                padding-bottom: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+
+
+                background-color: #643bf1;
+                border-radius: 5%; */
+
+                /* padding: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                background-color: rgb(0, 0, 0);
+                margin-left: 2rem;
+                border-radius: 2%;
+                overflow: hidden; */
+                /* Prevents overflow */
+
+                padding: 6rem !important;
+                font-size: 60px;
+                font-weight: bold;
+                font-family: cursive;
+                background-color: rgb(0, 0, 0);
+                margin-left: 2rem;
+                border-radius: 2%;
+                overflow: hidden;
+
+            }
+
+
+            .client-logos {
+                background-color: #f8f9fa;
+                padding: 20px 20px;
+                margin-top: 20px;
+            }
+
+            .logo-carousel {
+                display: flex;
+                /* animation: scrollLogos 20s linear infinite; */
+                animation: scrollLogos 40s linear infinite;
+                width: 100%;
+            }
+
+            .logo-carousel2 {
+                display: flex;
+                /* animation: scrollLogos 20s linear infinite; */
+                animation: scrollLogos2 50s linear infinite;
+                width: 100%;
+            }
+
+            .logo-item {
+                flex: 0 0 auto;
+                margin: 0 15px;
+                width: auto;
+            }
+
+            .logo-item img {
+                max-width: 150px;
+                height: 150px;
+            }
+
+            @keyframes scrollLogos {
+
+                /* 0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                } */
+                /* for rweverse order */
+                /* 0% {
+                    transform: translateX(-100%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                } */
+                0% {
+                    transform: translateX(0%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            @keyframes scrollLogos2 {
+                0% {
+                    transform: translateX(-100%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                }
+            }
+
+        }
+
+
+        @media screen and (max-width: 990px) {
+
+            /* for lower devices */
+            .client-logos {
+                background-color: #f8f9fa;
+                padding: 20px 20px;
+                margin-top: 20px;
+            }
+
+            .logo-carousel {
+                display: flex;
+                /* animation: scrollLogos 20s linear infinite; */
+                animation: scrollLogos 40s linear infinite;
+                width: 100%;
+            }
+
+            .logo-carousel2 {
+                display: flex;
+                /* animation: scrollLogos 20s linear infinite; */
+                animation: scrollLogos2 50s linear infinite;
+                width: 100%;
+            }
+
+            .logo-item {
+                flex: 0 0 auto;
+                margin: 0 15px;
+                width: auto;
+            }
+
+            .logo-item img {
+                max-width: 150px;
+                height: auto;
+            }
+
+            @keyframes scrollLogos {
+
+                /* 0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                } */
+                /* for rweverse order */
+                /* 0% {
+                    transform: translateX(-100%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                } */
+                0% {
+                    transform: translateX(0%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            @keyframes scrollLogos2 {
+                0% {
+                    transform: translateX(-100%);
+                }
+
+                50% {
+                    transform: translateX(-50%);
+                }
+
+                100% {
+                    transform: translateX(0%);
+                }
+            }
         }
     </style>
 </head>
 
 <body>
-    <!-- <div class="sticky-hero">
-        <div class="hero-intro-copy">
-            <div class="hero-lockup">
-                <div class="hero-lockup-inner">
-                    <p class="hero-eyebrow" data-focus-expression="" tabindex="-1"></p>
-                    <h1 class="hero-headline" data-focus-expression="" tabindex="-1">
-                        AirPods Pro </h1>
-                </div>
-            </div>
-            <p class="hero-payoff" data-focus-expression="" tabindex="-1">Groundbreaking<br>sound.</p>
-        </div>
-        <div class="image-sequence-container-hero">
-            <div class="image-sequence-container-inner-hero">
-                <canvas class="image-sequence image-sequence-hero" data-sequence-img-format-map="{&quot;large&quot;: &quot;png&quot;, &quot;medium&quot;: &quot;png&quot;, &quot;small&quot;: &quot;jpg&quot;}" data-sequence-basepath="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/" data-sequence-img-format="png" data-sequence-load-kf="{&quot;start&quot;: &quot;a0t - 200vh&quot;, &quot;end&quot;: &quot;a0b&quot;, &quot;anchors&quot;: [&quot;.scroll-container-hero&quot;], &quot;disabledWhen&quot;: [&quot;no-enhanced&quot;, &quot;no-heavy-media&quot;, &quot;text-zoom&quot;, &quot;mq-large-short&quot;]}" data-sequence-progress-kf="{&quot;start&quot;: &quot;a0t - css(--r-localnav-height, a0)&quot;, &quot;end&quot;: &quot;a0t - css(--r-localnav-height, a0) + (a0h - a1h) - 18vh&quot;, &quot;anchors&quot;: [&quot;.scroll-container-hero&quot;, &quot;.sticky-hero&quot;], &quot;disabledWhen&quot;: [&quot;no-enhanced&quot;, &quot;no-heavy-media&quot;, &quot;text-zoom&quot;, &quot;mq-large-short&quot;]}" data-component-list="Sequence" width="1440" height="810" style="opacity: 1;"></canvas>
-                <picture class="hero-fallback-pic loaded" data-lazy="" data-download-area-keyframe="{&quot;disabledWhen&quot;: [&quot;enhanced&quot;]}" data-picture-loaded="">
-
-                    <source srcset="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/small/0000.jpg" media="(max-width:734px)">
-                    <source srcset="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/medium/0000.png" media="(max-width:1068px)">
-                    <source srcset="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/large/0000.png" media="(min-width:0px)"><img src="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/large/0000.png" onload="__lp(event)" alt="Two white AirPods Pro earbuds facing each other. Silicone ear tips attached to compact earbud with black mesh on each.">
-                </picture>
-                <noscript>
-                    <picture class="hero-fallback-pic">
-                        <source srcset="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/small/0000.jpg" media="(max-width:734px)" />
-                        <source srcset="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/medium/0000.png" media="(max-width:1068px)" />
-                        <source srcset="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/large/0000.png" media="(min-width:0px)" />
-                        <img src="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/large/0000.png" alt="Two white AirPods Pro earbuds facing each other. Silicone ear tips attached to compact earbud with black mesh on each.">
-                    </picture>
-                </noscript>
-            </div>
-        </div>
-    </div> -->
-    <!--     <iframe title="Apple AirPods Pro Earphone Left 3D model - Sketchfab" class="c-viewer__iframe" src="https://sketchfab.com/models/0d33833934aa4d49a096dd96b05201fb/embed?autostart=1&amp;internal=1&amp;tracking=0&amp;ui_ar=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_snapshots=0&amp;ui_stop=0&amp;ui_theatre=0&amp;ui_watermark=0" id="api-frame" allow="fullscreen; xr-spatial-tracking" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" allowfullscreen="true"></iframe>
- -->
-    <iframe title="Apple AirPods Pro Earphone Left 3D model - Sketchfab" class="c-viewer__iframe" src="https://sketchfab.com/models/0d33833934aa4d49a096dd96b05201fb/embed?autostart=1&amp;" id="api-frame" allow="fullscreen; xr-spatial-tracking" xr-spatial-tracking="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" allowfullscreen="true" width="100%" height="400px"></iframe>
-
-    <div class="scroll-container">
-        <div class="sticky-hero">
-            <div class="hero-intro-copy">
-                <img src="path/to/your/image.jpg" alt="Description of the image" style="width:100%; height:auto;">
-                <div class="hero-lockup">
-                    <div class="hero-lockup-inner">
-                        <p class="hero-eyebrow" data-focus-expression="" tabindex="-1"></p>
-                        <h1 class="hero-headline" data-focus-expression="" tabindex="-1">
-                            AirPods Pro </h1>
-                    </div>
-                </div>
-                <p class="hero-payoff" data-focus-expression="" tabindex="-1">Groundbreaking<br>sound.</p>
-            </div>
-            <div class="image-sequence-container-hero">
-                <div class="image-sequence-container-inner-hero">
-                    <canvas class="image-sequence image-sequence-hero" data-sequence-img-format-map="{&quot;large&quot;: &quot;png&quot;, &quot;medium&quot;: &quot;png&quot;, &quot;small&quot;: &quot;jpg&quot;}" data-sequence-basepath="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/" data-sequence-img-format="png" data-sequence-load-kf="{&quot;start&quot;: &quot;a0t - 200vh&quot;, &quot;end&quot;: &quot;a0b&quot;, &quot;anchors&quot;: [&quot;.scroll-container-hero&quot;], &quot;disabledWhen&quot;: [&quot;no-enhanced&quot;, &quot;no-heavy-media&quot;, &quot;text-zoom&quot;, &quot;mq-large-short&quot;]}" data-sequence-progress-kf="{&quot;start&quot;: &quot;a0t - css(--r-localnav-height, a0)&quot;, &quot;end&quot;: &quot;a0t - css(--r-localnav-height, a0) + (a0h - a1h) - 18vh&quot;, &quot;anchors&quot;: [&quot;.scroll-container-hero&quot;, &quot;.sticky-hero&quot;], &quot;disabledWhen&quot;: [&quot;no-enhanced&quot;, &quot;no-heavy-media&quot;, &quot;text-zoom&quot;, &quot;mq-large-short&quot;]}" data-component-list="Sequence" width="1440" height="810" style="opacity: 1;"></canvas>
-                    <picture class="hero-fallback-pic loaded" data-lazy="" data-download-area-keyframe="{&quot;disabledWhen&quot;: [&quot;enhanced&quot;]}" data-picture-loaded="">
-
-                        <!-- <source srcset="assets/images/logo_trans_white.png" media="(max-width:734px)"> -->
-
-
-                        <!-- <source srcset="assets/images/logo2.png" media="(max-width:1068px)"> -->
-                        <source srcset="assets/images/logo_transp.png" media="(min-width:0px)"><img src="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/large/0000.png" onload="__lp(event)" alt="Two white AirPods Pro earbuds facing each other. Silicone ear tips attached to compact earbud with black mesh on each.">
-                    </picture>
-                    <!-- <noscript>
-                        <picture class="hero-fallback-pic">
-                            <source srcset="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/small/0000.jpg" media="(max-width:734px)" />
-                            <source srcset="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/medium/0000.png" media="(max-width:1068px)" />
-                            <source srcset="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/large/0000.png" media="(min-width:0px)" />
-                            <img src="/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/hero/large/0000.png" alt="Two white AirPods Pro earbuds facing each other. Silicone ear tips attached to compact earbud with black mesh on each.">
-                        </picture>
-                    </noscript> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- rdhdgfhfgkk -->'
-
+    <?php include('header.php') ?>
 
     <div class="container-fluid kasmainweb">
         <div class="row kasmainwebrow">
@@ -257,26 +604,18 @@
                                 <div class="logo-item"><img src="assets/images/clients/kht.png" alt="kht logo"></div>
                                 <div class="logo-item"><img src="assets/images/clients/lb.png" alt="lb logo"></div>
                                 <div class="logo-item"><img src="assets/images/clients/maa.png" alt="maa logo"></div> -->
-
+                            
                             </div>
                         </div>
                     </div>
                 </div>
-        </div>
+             </div>
 
 
         </section>
     </div>
-    <script>
-        window.addEventListener('scroll', function() {
-            var scrollTop = window.scrollY;
-            var rotation = scrollTop / 5; // Adjust the divisor to control the rotation speed
-            var images = document.querySelectorAll('.image-sequence-hero');
-            images.forEach(function(img) {
-                img.style.transform = 'rotate(' + rotation + 'deg)';
-            });
-        });
-    </script>
+    <?php include('footer.php') ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
