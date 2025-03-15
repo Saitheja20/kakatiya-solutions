@@ -281,7 +281,7 @@
             spans.forEach((span, index) => {
                 const spanTop = span.getBoundingClientRect().top;
                 if (spanTop < window.innerHeight * 0.90) {
-                    if (scrollY > (index * 200)) {
+                    if (scrollY > (index * 450)) {
                         span.style.opacity = 1;
                         if (index > 0) {
                             spans[index - 1].style.opacity = 0.5;
