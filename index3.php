@@ -26,6 +26,20 @@
         @media only screen and (max-width: 734px) {
             .headline {
                 font-size: 60px;
+                /* color: white; */
+                line-height: 1;
+                /* font-weight: 700; */
+                font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+                line-height: .7;
+                letter-spacing: -0.0210526316em;
+                position: relative;
+                /* left: 3.75vw; */
+                left: 1.75vw;
+                margin-top: 23rem;
+                margin-bottom: 0;
+                color: white !important;
+                padding-bottom: 5rem !important;
+                margin-bottom: 20rem;
             }
         }
 
@@ -47,37 +61,71 @@
         @media screen and (min-width:991px) {
 
             .cnt1 {
-                /* margin-bottom: 50rem ; */
+                width: 100%;
+                padding: 0 15px;
+                margin: 0 auto;
+                max-width: 1200px;
+                position: relative;
+                overflow: hidden;
             }
 
+            @media (max-width: 768px) {
+                .cnt1 {
+                    padding: 0 10px;
+                }
 
-            @media only screen and (min-width: 735px) {
-                .headline {
-                    font-size: 14.6vw;
+                .cnt1 .image-container {
+                    gap: 100px !important;
+                    top: 15% !important;
+                }
+
+                .cnt1 .image-container img {
+                    width: 120px !important;
                 }
             }
 
-            .headline {
-                /* font-size: 190px; */
-                font-size: 233px;
-                line-height: 1;
-                font-weight: 700;
-                font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-                line-height: .7;
-                letter-spacing: -0.0210526316em;
-                position: relative;
-                /* left: 3.75vw; */
-                left: 1.75vw;
-                margin-top: 23rem;
-                margin-bottom: 0;
-                color: white !important;
-                padding-bottom: 5rem !important;
-                margin-bottom: 20rem;
+            @media (max-width: 480px) {
+                .cnt1 .image-container {
+                    gap: 60px !important;
+                    top: 20% !important;
+                }
+
+                .cnt1 .image-container img {
+                    width: 80px !important;
+                }
             }
 
-            .headline2 {
-                /* font-size: 190px; */
-                /* font-size: 80px;
+            /* margin-bottom: 50rem ; */
+        }
+
+
+        @media only screen and (min-width: 735px) {
+            .headline {
+                font-size: 14.6vw;
+            }
+        }
+
+        .headline {
+            /* font-size: 190px; */
+            font-size: 233px;
+            line-height: 1;
+            font-weight: 700;
+            font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            line-height: .7;
+            letter-spacing: -0.0210526316em;
+            position: relative;
+            /* left: 3.75vw; */
+            left: 1.75vw;
+            margin-top: 23rem;
+            margin-bottom: 0;
+            color: white !important;
+            padding-bottom: 5rem !important;
+            margin-bottom: 20rem;
+        }
+
+        .headline2 {
+            /* font-size: 190px; */
+            /* font-size: 80px;
                 line-height: 1;
                 font-weight: 700;
                 font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -89,17 +137,17 @@
                 margin-top: 23rem;
                 margin-bottom: 0;
                 color: white !important; */
-                /* margin-top: 2rem; */
-                font-size: 56px;
-                line-height: 1;
-                font-weight: 700;
-                letter-spacing: 0em;
-                font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-                display: inline;
-                color: #fff;
-                --default-opacity: 0.15;
-                margin: 10rem 0rem !important;
-            }
+            /* margin-top: 2rem; */
+            font-size: 56px;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 0em;
+            font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+            display: inline;
+            color: #fff;
+            --default-opacity: 0.15;
+            margin: 10rem 0rem !important;
+        }
 
         }
 
@@ -125,12 +173,14 @@
                 <div style="position: relative; text-align: center; animation: zoomIn 2s ease-in-out;">
                     <h1 class="headline">AirPods Pro</h1>
                     <div class="image-container" style="position: absolute; top: 5%; left: 54%; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 280px;">
-                        <img src="assets/images/left.png" alt="apple left" class="rotate-image" width="250px" height="auto">
-                        <img src="assets/images/right.png" alt="apple right" class="rotate-image" width="250px" height="auto">
+                        <!-- <img src="assets/images/left.png" alt="apple left" class="rotate-image" width="250px" height="auto">
+                        <img src="assets/images/right.png" alt="apple right" class="rotate-image" width="250px" height="auto"> -->
+                        <img src="assets/images/left.png" alt="apple left" class="rotate-image" width="250px" height="auto" style="filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));">
+                        <img src="assets/images/right.png" alt="apple right" class="rotate-image" width="250px" height="auto" style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.02));">
                     </div>
-                    <!-- <div style="position: absolute;  bottom: 5%; left: 30%;">
-                        <img src="assets/images/airtrans.png" alt="apple left" class="rotate-image" width="300px" height="auto">
-                    </div> -->
+                    <div style="position: absolute;  bottom: 5%; left: 30%;">
+                        <img src="assets/images/pngtree2.png" alt="apple left" class="rotate-image2" width="300px" height="auto">
+                    </div>
                 </div>
 
 
@@ -157,17 +207,7 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
     <div class="container-fluid kasmainweb">
-
-
-
 
 
         <div>
